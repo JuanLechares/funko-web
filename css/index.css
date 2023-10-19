@@ -1,0 +1,644 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=Raleway:wght@300..700&display=swap');
+
+
+/*
+    font-size responsive
+*/
+html {
+    font-size: 16px;
+}
+
+@media only screen and (min-width: 720px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1240px) {
+    html {
+        font-size: 24px;
+    }
+}
+
+/* VARIABLES */
+:root {
+    /* Palette */
+    --primary-solid: #FF3333;
+    --primary-900: rgba(255, 51, 51, 0.9); 
+    --primary-500: rgba(255, 51, 51, 0.5); 
+    --primary-300: rgba(255, 51, 51, 0.3); 
+    --secondary-solid: #1D84B5;
+    --secondary-900: rgba(29, 132, 181, 0.9);
+    --secondary-500: rgba(29, 132, 181, 0.5);
+    --secondary-300: rgba(29, 132, 181, 0.3);
+    --dark-solid: #1F1F1F;
+    --dark-900: rgba(31, 31, 31, 0.9);
+    --dark-500: rgba(31, 31, 31, 0.5);
+    --dark-300: rgba(31, 31, 31, 0.3);
+    --dark-bg-solid: #30343F;
+    --light-bg-solid: #FAFAFF;
+    --light-font-solid: #FFFFFF;
+
+    /* Typography */
+    --base-font: 'Inter', sans-serif;
+    --alternative-font: 'Raleway', sans-serif; 
+
+    /* Font-sizes */
+    --font-display: 4.6em;
+    --font-jumbo: 3.8em;
+    --font-xlarge: 3em;
+    --font-large: 2.4em;
+    --font-medium: 1.8em;
+    --font-small: 1.6em;
+    --font-xsmall: 1.4em;
+
+    /* Spacings */
+    --spacing-128: 12.8rem;    
+    --spacing-68: 6.8rem;    
+    --spacing-36: 3.6rem;    
+    --spacing-28: 2.8rem;
+    --spacing-24: 2.4rem;
+    --spacing-20: 2rem;
+    --spacing-16: 1.6rem;    
+    --spacing-12: 1.2rem;    
+    --spacing-8: 0.8rem;
+}
+
+/*
+------------------------------------------------
+--------------RESET--------------------
+------------------------------------------------
+*/
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: var(--base-font);
+    font-size: 62.5%;
+    color: var(--dark-solid);
+}
+a {
+    text-decoration: none;
+    font-family: inherit;
+    color: inherit;
+}
+header, footer {
+    font-family: var(--alternative-font);
+    color: var(--light-font-solid);
+}
+ul, ol {
+    list-style-type: none;
+}
+p { 
+    font-size: 1.8em; /* 1.8em=18px */
+}
+img{
+    width: 100%;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*
+------------------------------------------------
+------------------HEADER------------------------
+------------------------------------------------
+*/
+header {
+background-color: var(--dark-bg-solid);
+gap: var(--spacing-36);
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+}
+.navbar__logo {
+    max-width: 300px;
+
+}
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-20);
+
+}
+.navbar__link{
+    font-size: var(--font-medium);
+    padding: var(--spacing-8) var(--spacing-16);
+    display: inline-block;
+    transition:background 0.3s ease-in-out;
+    position: relative;
+}
+.navbar__link:hover{
+    color:var(--primary-900)
+}
+.with-icon{
+    display: flex;
+    align-items: center;
+    gap:var(--spacing-8)
+}
+.with-submenu:hover .submenu{
+
+display: block;
+}
+.submenu{
+    display: none;
+    width: auto;
+    position: absolute;
+    background-color: var(--dark-bg-solid);
+    padding: var(--spacing-8);
+    z-index: 3;
+}
+.submenu__link{
+    display: block;
+    padding: var(--spacing-8)var(--spacing-16);
+    font-size:var(--font-medium);
+    transition:background 0.3s ease-in-out;
+}
+
+.submenu__link:hover{
+    color:var(--primary-900)
+}
+
+/*
+------------------------------------------------
+--------------------HERO------------------------
+------------------------------------------------
+*/
+
+.hero{
+    background-image: url(../img/funkos-banner.webp);
+    padding: var(--spacing-128) 9rem;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    position: relative;
+}
+.hero::before{
+    content: '';
+    background-color:rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(2px) brigthness(.9px);
+
+}
+.hero__content{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-20);
+    align-items: start;
+    z-index: 2;
+    position: relative;
+}
+.hero__title{
+    font-family:var(--alternative-font) ;
+    font-size:var(--font-jumbo) ;
+    color:var(--light-font-solid) ;
+}
+.hero__text{
+    font-family: var(--alternative-font);
+    font-size: var(--font-medium);
+    color:var(--light-font-solid) ;
+}
+.hero__link{
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: initial;
+    background-color: var(--light-bg-solid);
+    margin-top: var(--spacing-20);
+    padding: var(--spacing-12) var(--spacing-68);
+    font-size: var(--font-medium);
+    border-radius: 50px;
+    font-weight: 500px;
+    transition:all .3s ease-in-out;
+}
+
+.hero__link:hover{
+    background-color: var(--primary-900);
+    color: var(--light-font-solid);
+}
+/*
+------------------------------------------------
+--------------COLLECTION--------------------
+------------------------------------------------
+*/
+
+.collection{
+display: flex;
+grid-template-columns: repeat(2 1fr);
+align-items: center;
+padding-left: 6rem;
+padding-right: 6rem;
+}
+.collection:nth-child(2).colletion__cover{
+    order: -1;
+}
+.collection__content{
+    display: flex;
+    flex-direction: column;
+    gap:var(--spacing-24) ;
+    align-items: start;
+}
+.collection__title{
+    font-family:var(--alternative-font);
+    font-size: var(--font-display);
+    font-weight: 500;
+}
+.collection__text{
+    font-family:var(--alternative-font);
+    font-size: var(--font-large);
+    font-weight: 300;
+    border-bottom: 2px solid var(--primary-solid);
+    padding-bottom:var(--spacing-20) ;
+
+}
+.collection__link{
+    display: inline-block;
+    font-size: var(--font-medium);
+    text-align: center;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: var(--light-bg-solid);
+    background-color: var(--dark-bg-solid);
+    margin-top: var(--spacing-20);
+    padding: var(--spacing-12);
+    width: 33%; 
+    border-radius: 50px;
+    font-weight: 500;
+    transition: background.3s ease-in-out;
+}
+.collection__link:hover
+{
+background-color: var(--primary-900);
+}
+
+/*
+------------------------------------------------
+--------------SLIDER--------------------
+------------------------------------------------
+*/
+
+.slider{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-36);
+    margin: var(--spacing-16) auto;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+.slider__title{
+    font-family: var(--alternative-font);
+    font-size:var(--font-display) ;
+    text-transform:uppercase ;
+}
+.slider__items{
+    display: flex;
+    gap: var(--spacing-24);
+}
+
+.card-item__cover{
+    display: flex;
+    position: relative;
+}
+.card-item__tag{
+    font-size: small;
+    text-transform: uppercase;
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    padding: var(--spacing-8 --spacing-12);
+    position: absolute;
+    right: 0;
+}
+.card-item__cover img{  
+    animation:fade 1.7s;
+}   
+
+.card-item__img--back{
+    display: none;
+
+}
+.card-item__cover:hover .card-item__img--back{
+    display: block;
+
+}
+.card-item__cover:hover .card-item__img--front{
+    display: none;
+}
+.card-item__content{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-12);
+    padding: var(--spacing-16);
+}
+.card-item__license{
+    font-size: var(--font-xsmall) ;
+    font-weight: 500 ;
+}
+
+.card-item__name{
+    font-size:var(--font-medium) ;
+    font-weight:700;
+}
+.card-item__price{
+    font-size:var(--font-small) ;
+  
+}
+.card-item__promo{
+    font-size:var(--font-xsmall) ;
+    color:var(--secondary-solid);
+    font-weight: 700 ;
+}
+/*
+------------------------------------------------
+-------------------FOOTER-----------------------
+------------------------------------------------
+*/
+.footer{
+    background-color: var(--dark-bg-solid);
+    padding: 3rem;
+}
+.footer__copy{
+    margin-top: var(--spacing-36);
+    text-align: center;
+}
+
+
+
+/*
+------------------------------------------------
+--------------ANIMATIONS--------------------
+------------------------------------------------
+*/
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/*
+------------------------------------------------
+--------------estilos de shop--------------------
+------------------------------------------------
+*/
+.shop{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    height: 100%;
+}
+.filter-box{
+    padding-top: 3rem;
+    padding-left: 5rem;
+}
+
+.filter-box h2, .filter-box input, .filter-box select, .filter-box option{
+    margin-bottom: var(--spacing-8);
+}
+
+.filter-box input{
+    height: var(--spacing-28);
+    padding: var(--spacing-8);
+    border-radius: var(--spacing-8);
+}
+
+.filter-box .order select{
+    height: 4rem;
+    padding: var(--spacing-8);
+    border-radius: var(--spacing-8);
+}
+
+.filter-box .price{
+    display: flex;
+    flex-direction: row;
+    width: var(--spacing-8);
+    align-items: center;
+}
+
+.filter-box .price input{
+    margin: var(--spacing-8);
+    width: var(--spacing-68);
+}
+
+.item-checkbox{
+    display: flex;
+    align-content: center;
+}
+
+.item-checkbox label{
+    padding-top: var(--spacing-8);
+    text-transform: uppercase;
+}
+
+
+/*
+------------------------------------------------
+--------------items de shop--------------------
+------------------------------------------------
+*/
+
+.container_shop{
+    margin-top: 20px;
+    padding-left: 60px;
+}
+.container .pages{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6rem auto;
+}
+
+.pages button{
+    background-color: var(--light-bg-solid);
+    width: 5%;
+    padding: var(--spacing-12);
+    margin: var(--spacing-8);
+    border-radius: var(--spacing-8);
+    border-color: rgb(196, 192, 192);
+}
+.pages button:hover{
+    cursor: pointer;
+    color: var(--primary-solid);
+    border-color: var(--primary-solid);
+    
+}
+
+/*
+------------------------------------------------
+--------------CONTACTO-------------------
+------------------------------------------------
+*/
+
+.main_contact{
+    display: grid;
+    margin: auto 30%;
+    padding:2em ;
+}
+.section_contacto{
+border-width:1px;
+border-style: double;
+border-color:silver;
+padding: 25%;
+box-shadow: 3px 2px 3px 2px rgba(0, 0, 0, 0.2);
+border-radius:  var(--spacing-8);
+
+}
+.title_contact{
+    font-family: var(--base-font);
+    font-size: 3em;
+    color: var(--dark-solid);
+}
+.container_contact{
+ margin-top: 2em;
+ margin-left: 2em;
+
+}
+.btn{
+    margin-top: 1.5em;
+    background-color:var(--dark-bg-solid);
+    padding: 10px 40px;
+    border-radius: 10px;
+    font-family: var(--alternative-font);
+    color:var(--light-font-solid);
+   font-size: var(--font-medium);
+  
+    }
+    .btn:hover{
+        background-color: var(--primary-solid);
+        transition:background 0.3s ease-in-out 
+    }
+  
+
+/*
+------------------------------------------------
+--------------ESTILOS DE ITEM-------------------
+------------------------------------------------
+*/
+.item .price{
+    font-size:var(--font-xlarge);
+}
+
+
+.item p{
+    border: none;
+}
+
+
+.btn-red{
+    color: white;
+    font-size: var(--font-medium);
+    padding: 1.1rem;
+    margin-left: 2rem;
+    background-color: #FF3333;
+    border: none;
+    cursor: pointer;
+    transition: background.3s ease-in-out;
+}
+
+.btn-red:hover{
+    background-color:#ba4840;
+}
+
+.input-num{
+    padding: var(--spacing-8);
+    width: 20%;
+    font-size: 2rem;
+}
+
+.input-num::-webkit-inner-spin-button,
+.input-num::-webkit-outer-spin-button
+{
+    opacity: 1;
+}
+
+.product{
+    padding: var(--spacing-28);
+}
+.cuotas{
+    color: var(--secondary-solid);
+    font-size: 1.7rem;
+}
+
+/*
+------------------------------------------------
+--------------ESTILOS DE ADMIN------------------
+------------------------------------------------
+*/
+.admin-container{
+    padding: 2rem 10rem;
+    padding-right: 22rem;
+    width: 100%;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+}
+
+.search input{
+    height: 4rem;
+    border-radius: var(--spacing-8);
+    padding: 1rem;
+    margin-left: 1rem;
+    width: 50%;
+}
+
+.search-icon{
+    width: 4%;
+}
+
+.table_adm_plus{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-right:3rem;
+}
+
+.table_adm_title_container{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    font-family:var(--alternative-font);
+    font-size: 2rem;
+    padding-top: 3rem;
+    align-items: center;
+}
+
+
+.table__admin{
+    width: 100%;
+    font-family:var(--alternative-font);
+    font-size: 2.5rem;
+    padding-top: 3rem;
+}
+
+.table__admin th{
+    text-align: start;
+    
+}
+
+.table__admin td{
+    padding-right: 2rem;
+}
