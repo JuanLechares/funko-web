@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EDIT ITEM | Funkoshop</title>
+  </head>
+  <body>
+    <!-- INICIO HEADER -->
+    <header>
+      <nav>
+        <picture>
+          <a href="./index.html">
+            <img
+              src="./img/branding/logo_light_horizontal.svg"
+              alt="Isologotipo de la marca Funkoshop"
+            />
+          </a>
+        </picture>
+        <ul>
+          <li><a href="./pages/index.html">VER TIENDA</a></li>
+          <li><a href="./pages/contacto.html">ADMIN</a></li>
+          <li><a href="./pages/login.html">SALIR</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- FIN HEADER -->
+
+    <!-- SECCION PRINCIPAL DE LA WEB -->
+    <main>
+      <h1>EDITAR ITEM</h1>
+      <nav>
+        <label for="category">Categoría: </label>
+        <select name="category" id="category">
+          <option value="figuras">Figuras</option>
+        </select>
+
+        <label for="license">Licencia: </label>
+        <select name="license" id="license">
+          <option value="naruto shippuden">Naruto Shippuden</option>
+        </select>
+      </nav>
+
+      <div>
+        <label for="name">Nombre del producto:</label>
+        <input type="text" id="name" placeholder="Kakashi Hatake Shippuden Saga">
+      </div>
+
+      <div>
+        <label for="description"></label>
+        <textarea name="description" id="description" ></textarea>
+      </div>
+
+      <div>
+        <label for="sku">SKU:</label>
+        <input type="text" id="sku" value="NAR001012">
+        
+        <label for="price">Precio:</label>
+        <input type="text" id="price" value="$ 1.799,00">
+
+        <label for="stock">Stock:</label>
+        <input type="number" id="stock" value="10" min="0">
+      </div>
+      
+      <div>
+        <label for="descuento">Descuento:</label>
+        <input type="text" id="descuento" value="10%">
+
+        <label for="cuotas">Cuotas: </label>
+        <select name="cuotas" id="cuotas">
+          <option value="6">6 Coutas sin interés</option>
+        </select>
+      </div>
+
+      <div>
+        <section>
+          <img src="img/naruto/kakashi_hatake_front.svg" alt="figura-frente">
+          <hr>
+          <span>Frente</span>
+        </section>
+        <section>
+          <img src="img/naruto/kakashi_hatake_back.svg" alt="figura-dorso">
+          <hr>
+          <span>Dorso</span>
+        </section>
+        
+      </div>
+      
+      <div>
+        <input type="file" />
+      </div>
+
+      <div>
+        <button type="submit">Modificar Producto</button>
+      </div>
+    </main>
+    <!-- FIN DE LA SECCION PRINCIPAL DE LA WEB  -->
+
+    <!--INICIO FOOTER -->
+    <footer>
+      <section>
+        <nav>
+          <ul>
+            <li><a href="./pages/shop.html">SHOP</a></li>
+            <li><a href="./pages/register.html">REGISTRARSE</a></li>
+            <li><a href="./pages/login.html">LOGIN</a></li>
+            <li><a href="./pages/contacto.html">CONTACTO</a></li>
+          </ul>
+          <picture>
+            <img
+              src="./img/branding/isotype.svg"
+              alt="Isotipo de la marca Funkoshop"
+            />
+          </picture>
+        </nav>
+      </section>
+      <p>All rights reserved 2023 - Funkoshop & copyright</p>
+    </footer>
+    <!--FIN FOOTER -->
+  </body>
+</html>
