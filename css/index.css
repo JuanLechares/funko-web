@@ -772,3 +772,13 @@ border-radius:  var(--spacing-8);
     grid-column: 1 / 4;
     margin-top: var(--spacing-36);
 }
+
+/*create.html*/
+.create__edit{
+    display: flex;
+    column-gap: var(--spacing-24);
+}
+
+.create__boton {
+    padding: 1rem 4rem 2.5rem ;
+}
