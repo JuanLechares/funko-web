@@ -774,3 +774,142 @@ border-radius:  var(--spacing-8);
 .resumen .btn-resumen:hover{
     background-color: #ba4840;
 }
+/*ADMIN - EDIT*/
+.edit__form{
+    max-width: 120rem;
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(12, var(--spacing-36));
+    row-gap: var(--spacing-12);
+    font-family: var(--alternative-font);
+    font-weight: bold;
+    color: var(--dark-solid);
+}
+
+.edit__h1 {
+    font-size: var(--font-large);
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+
+.edit__label {
+    font-size: var(--font-xsmall);
+}
+
+.edit__select {
+    border: 0.2rem solid var(--dark-bg-solid);
+    border-radius: 0.4rem;
+    padding: 0.4rem;
+    max-width: 15rem;
+    color: var(--dark-bg-solid);
+}
+
+.edit__gridCat {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+.edit__gridLic {
+    grid-row: 2 / 3;
+    grid-column: 2 / 4;
+}
+
+.edit__gridNom {
+    grid-row: 3 / 4;
+    grid-column: 1 / 4;
+}
+
+.edit__gridDes {
+    grid-row: 4 / 6;
+    grid-column: 1 / 4;
+}
+
+.edit__gridProd {
+    grid-row: 6 / 7;
+    grid-column: 1 / 4;
+}
+
+.edit__input {
+    text-align: center;
+    margin: 0 2rem 0 0.6rem;
+    padding: 0.4rem;
+    border: none;
+    border-bottom: 0.05rem solid var(--primary-solid);
+}
+
+.edit__inputNom {
+    max-width: 17rem;
+}
+
+.edit__input1 {
+    max-width: 10rem;
+}
+
+.edit__input2 {
+    max-width: 8rem;
+}
+
+.edit__input3 {
+    max-width: 4rem;
+}
+
+.edit__input4 {
+    max-width: 4rem;
+}
+
+.edit__gridPago {
+    grid-row: 7 / 8;
+    grid-column: 1 / 4;
+}
+
+.edit__gridFile {
+    grid-row: 8 / 9;
+    grid-column: 1 / 4;
+}
+
+.edit__boton {
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    padding: var(--spacing-12);
+    border-style: none;
+}
+
+.edit__gridImg {
+    grid-row: 9 / 11;
+    grid-column: 1 / 4;
+    display: flex;
+    column-gap: 2rem;
+}
+
+.edit__img {
+    max-width: 10rem;
+}
+
+.edit__hr {
+    padding: 0.05rem;
+    background-color: red;
+    border: none;
+    margin-bottom: 0.3rem;
+}
+
+.edit__span {
+    font-weight: bold;
+    margin-left: 3.5rem;
+}
+
+.edit__gridEdit {
+    grid-row: 11 / 12;
+    grid-column: 1 / 4;
+    margin-top: var(--spacing-36);
+}
+
+/*create.html*/
+.create__edit{
+    display: flex;
+    column-gap: var(--spacing-24);
+}
+
+.create__boton {
+    padding: 1rem 4rem 2.5rem ;
+}
