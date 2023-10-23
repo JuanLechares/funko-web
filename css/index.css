@@ -922,6 +922,82 @@ border-radius:  var(--spacing-8);
     padding: 1rem 4rem 2.5rem ;
 }
 
+/* register */
+
+.register{
+
+    display: block;
+    margin: 0 auto;
+    width:35%;
+    margin-top: 8em;
+     margin-bottom: 20%;
+     padding:0;
+    border-style: groove;
+     border-radius:1em ;
+     box-shadow:1em 0.2em 0.2em   var(--primary-solid);
+ }
+   
+ .register__form{
+     margin: 2%;
+     margin-top: 1.5em;
+     padding: 1em;
+     
+ }
+ .register_title{
+     font-family: var(--alternative-font);
+     font-size:xx-large;
+     text-align: center;
+     margin-top: 1em;
+     color: var(--primary-solid);
+ }
+ .register_subtitle{
+     font-family: var(--dark-solid);
+     font-size: var(--font-medium);
+     font-weight: 700;
+     text-align:center;
+     margin: 0.5em;
+    
+ }
+ .register__form__name, .register__form__lastname, .register__form__email, .register__form__password,
+ .register__form__repeatpassword, .register__form__password
+ { 
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     align-items: center;
+     padding: var(--spacing-8);
+     font-family: var(--alternative-font);
+     font-size: var(--font-xsmall);
+     font-weight: bold;
+     letter-spacing: .1rem;
+     border-radius: 15%;
+ }
+ .register__form__button{
+     margin-left: 1em;
+     padding-inline-start: 5em;
+     font-family: var(--alternative-font);
+     font-size:x-small;
+     font-weight: 700;
+     
+ }
+ .btn_register{
+    margin-top :1.5em;
+    margin-bottom: 2em;
+    margin-right: 1em;
+     background-color:var(--primary-solid);
+     padding:0.5em 1em;
+     border-radius: 10%;
+     font-family: var(--alternative-font);
+     color:var(--light-font-solid);
+    font-size: small;
+    cursor:pointer;
+    }
+  .btn_register:hover
+     {
+      background-color: var(--dark-bg-solid);
+         transition:background 0.3s ease-in-out;
+    }
+    
+
 /*LOGIN LOGIN LOGIN LOGIN*/
 
 .form { 
