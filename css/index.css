@@ -721,9 +721,10 @@ border-radius:  var(--spacing-8);
     cursor: pointer;
 }
 
-.row-cart-title .col-cart{
-    width: 16vw;
-    text-align: center;
+.row-cart-title{
+    display: grid;
+    grid-template-columns: 13% 26% 24% 20%;
+    text-align: start;
 }
 
 
