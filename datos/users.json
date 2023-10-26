@@ -1,0 +1,24 @@
+{
+    "users":[
+        {
+            "email":"admin",
+            "pass":"1234",
+            "typeUser":"adm"
+        },
+        {
+            "email":"juan",
+            "pass":"1234",
+            "typeUser":"cliente"
+        },
+        {
+            "email":"pablo",
+            "pass":"1234",
+            "typeUser":"cliente"
+        },
+        {
+            "email":"juanlechares.ing@outlook.com",
+            "pass":"1234",
+            "typeUser":"cliente" 
+        }
+    ]
+}

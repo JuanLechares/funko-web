@@ -1,0 +1,68 @@
+{
+    "items":[{
+            "codigo":"stw001001",
+            "nombre":"star wars",
+            "categoria":"star wars"
+        },
+        {
+            "codigo":"stw001002",
+            "nombre":"Boba Fett Fighter",
+            "categoria":"star wars"
+        },
+        {
+            "codigo":"stw001003",
+            "nombre":"Luke Skylwalker & Grogu",
+            "categoria":"star wars"
+        },
+        {
+            "codigo":"stw001004",
+            "nombre":"Stormytooper Lightsaber",
+            "categoria":"star wars"
+        },
+        {
+            "codigo":"pkm001001",
+            "nombre":"Charmander Smiley",
+            "categoria":"pokemon"
+        },
+        {
+            "codigo":"pkm001002",
+            "nombre":"Dragonite Hil",
+            "categoria":"pokemon"
+        },
+        {
+            "codigo":"pkm001003",
+            "nombre":"Pidgeotto Flying",
+            "categoria":"pokemon"
+        },
+        {
+            "codigo":"pkm001004",
+            "nombre":"Picachu Smiley",
+            "categoria":"pokemon"
+        },
+        {
+            "codigo":"pkm001005",
+            "nombre":"Vulpix Fancy",
+            "categoria":"pokemon"
+        },
+        {
+            "codigo":"hpt001001",
+            "nombre":"Vulpix Fancy",
+            "categoria":"harry potter"
+        },
+        {
+            "codigo":"hpt001002",
+            "nombre":"Vulpix Fancy",
+            "categoria":"harry potter"
+        },
+        {
+            "codigo":"hpt001003",
+            "nombre":"Vulpix Fancy",
+            "categoria":"harry potter"
+        },
+        {
+            "codigo":"hpt001004",
+            "nombre":"Vulpix Fancy",
+            "categoria":"harry potter"
+        }
+    ]
+}
