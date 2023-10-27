@@ -1,12 +1,12 @@
+
 function logear(){
     let email=document.getElementById("email").value;
     let pass=document.getElementById("password").value;
-    users.forEach(e => {
-        if(email==e.email && pass==e.pass){
-            if(e.typeUser=="adm"){window.location="./admin.html"}
-            else if(e.typeUser=="cliente"){window.location="./index.html"}
-            return;
-        }
+    const userSucess=users.find((e)=>{
+        email==e.email && pass==e.pass && (e.typeUser=="adm"? 
+        (window.location="admin.html")
+        :
+        (window.location="index.html"))
     });
 }
 
@@ -33,3 +33,4 @@ var users=[
         typeUser:"cliente" 
     }
 ]
+
