@@ -1,6 +1,7 @@
 /* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=Raleway:wght@300..700&display=swap');
-
+@import url('https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css');
+@import url('https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css');
 
 /*
     font-size responsive
@@ -318,11 +319,17 @@ background-color: var(--primary-900);
     font-size:var(--font-display) ;
     text-transform:uppercase ;
 }
-.slider__items{
-    display: flex;
-    gap: var(--spacing-24);
+iconify-icon{
+    color:var(--dark-bg-solid);
+    font-size: var(--font-small);
+    font-weight: 700;
 }
-
+.glide__arrow--left{
+    left: 0;
+}
+.glide__arrow--right{
+    right:0;
+}
 .card-item__cover{
     display: flex;
     position: relative;
@@ -576,11 +583,21 @@ border-radius:  var(--spacing-8);
 .btn-red:hover{
     background-color:#ba4840;
 }
+.item__quantity{
 
-.input-num{
     padding: var(--spacing-8);
-    width: 20%;
+    width: 8%; 
     font-size: 2rem;
+    color: var(--light-font-solid);
+    background-color: var(--dark-solid);
+    
+}
+
+.item-imput{
+    padding: var(--spacing-8);
+    width: 10%;
+    font-size: 2rem;
+    text-align: center;
 }
 
 .input-num::-webkit-inner-spin-button,
