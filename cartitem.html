@@ -8,8 +8,9 @@
   </head>
   <body>
     <!-- INICIO HEADER -->
-    <header>
-      <nav class="navbar container">
+    <header> 
+      <nav class="container navbar">
+        <!--INICIO LOGO-->
         <picture class="navbar__logo">
           <a href="./index.html">
             <img
@@ -18,8 +19,11 @@
             />
           </a>
         </picture>
+        <!--FIN LOGO-->
+
+        <!--INICIO MENU-->
         <ul class="navbar__menu">
-         <li class="navbar__item with-submenu">
+         <li class="navbar__item with-submenu navbar__shop">
             <a class="navbar__link with-icon" href="shop.html">SHOP<iconify-icon icon="ci:chevron-down"></iconify-icon></a>
             <ul class="submenu">
               <li class="submenu__item">
@@ -33,35 +37,41 @@
               </li>
             </ul>
           </li>
+          
           <li class="navbar__item">
             <a class="navbar__link"  href="contacto.html">CONTACTO</a></li>
           <li class="navbar__item">
             <a class="navbar__link" href="login.html">LOGIN</a></li>
-          <li>
-            <a class="navbar__cart" href="cart.html">
+          
+            <li>
+            <a class="navbar__cart" href="cartitem.html">
               <img src="./img/icons/cart-icon.svg" alt="icono de carrito" />
             </a>
           </li>
         </ul>
+        <!--FIN MENU-->
       </nav>
     </header>
     <!-- FIN HEADER -->
 
     <!-- SECCION PRINCIPAL DE LA WEB -->
-    <main>
-      
-
+    <main class="cartitem-container">
+      <!--INICIO DETALLE ITEM-->
       <section class="cart">
-        <h2 class="cart_title">CARRITO DE COMPRAS</h2>
+        <div class="cart__h2">
+          <h2 class="cart_title">CARRITO DE COMPRAS</h2>
+        </div>
+          <!--INICIO CARACTERISTICAS-->
           <section class="row-cart row-cart-title">
-              <div class="cart-detalle"></div>
-              <div  class="col-cart"><p>DETALLE DE PRODUCTO</p></div>
-              <div  class="col-cart col-cart-cant"><p>CANTIDAD</p></div>
-              <div  class="col-cart"><p>TOTAL</p></div>
+              <div  class="col-cart"><p class="cartitem__p">DETALLE DE PRODUCTO</p></div>
+              <div  class="col-cart col-cart-cant"><p class="cartitem__p">CANTIDAD</p></div>
+              <div  class="col-cart"><p class="cartitem__p">TOTAL</p></div>
           </section>
+          <!--FIN CARACTERISTICAS-->
 
-          <section class="row-cart">
-              <div  class="col-cart">
+          <!--INICIO ITEM 1-->
+          <section class="row-cart cartitem__item">
+              <div  class="col-cart shop-grid__1">
                 <picture>
                   <img
                   src="./img/star-wars/baby-yoda-1.webp"
@@ -70,20 +80,26 @@
                 />
                 </picture>
               </div>
-              <div class="col-cart col-cart-descrip">
+
+              <div class="col-cart col-cart-descrip shop-grid__2">
                 <h3 class="title_detalle">BABY YODA BLUEBALL</h3>
                 <p>star wars</p>
                 <span>&nbsp;</span>
                 <p>precio: $ 1799,99</p>
               </div>
-              <div class="col-cart"><input class="input-num" type="number" value="2" min="0"></div>
-              <div class="col-cart"><p>$ 3599,98</p></div>
-              <div class="col-cart cart-plus"><img src="img/icons/gg_close-o.svg" alt="delete-trash"></div>
-          </section>
 
-          <section class="row-cart">
+              <div class="col-cart shop-grid__3"><input class="input-num cartitem__input" type="number" value="2" min="0"></div>
+
+              <div class="col-cart shop-grid__4"><p>$ 3599,98</p></div>
+
+              <div class="col-cart cart-plus shop-grid__5"><img class="cartitem__close" src="img/icons/gg_close-o.svg" alt="delete-trash"></div>
+          </section>
+          <!--FIN ITEM 1-->
+
+          <!--INICIO ITEM 2-->
+          <section class="row-cart cartitem__item">
             <tr>
-              <div class="col-cart">
+              <div class="col-cart shop-grid__1">
                 <picture>
                   <img
                   src="./img/pokemon/pidgeotto-1.webp"
@@ -92,21 +108,26 @@
                   />
                 </picture>
               </div>
-              <div class="col-cart col-cart-descrip">
+
+              <div class="col-cart col-cart-descrip shop-grid__2">
                 <h3>PIDGEOTTO</h2>
                 <p>pokemon</p>
                 <span>&nbsp;</span>
                 <p>Precio unitario: $ 1799,99</p>
                 </div>
-              <div class="col-cart"><input class="input-num" type="number" value="1" min="0"></div>
-              <div class="col-cart"><p>$ 1799,99</p></div>
-              <div class="col-cart cart-plus"><img src="img/icons/gg_close-o.svg" alt="delete-trash"></div>
+
+              <div class="col-cart shop-grid__3"><input class="input-num cartitem__input" type="number" value="1" min="0"></div>
+
+              <div class="col-cart shop-grid__4"><p>$ 1799,99</p></div>
+
+              <div class="col-cart cart-plus shop-grid__5"><img class="cartitem__close" src="img/icons/gg_close-o.svg" alt="delete-trash"></div>
             </tr>
           </section>
-
+          <!--FIN ITEM 2-->
       </section>
+      <!--FIN DETALLE ITEM-->
 
-
+      <!--INICIO RESUMEN-->
       <section class="resumen-box">
         <div class="resumen">
           <div class="title-resumen">
@@ -114,6 +135,7 @@
               <span>RESUMEN</span>
             </div>
           </div>
+
           <table>
             <tr>
               <th><span>CANTIDAD DE ELEMENTOS</span></th>
@@ -136,13 +158,13 @@
               <td><span>$ 5.399,97</span></td>
             </tr>
           </table>
+
           <button class="btn-resumen" type="submit">
             IR A PAGAR
           </button>
         </div>
-        
       </section>
-
+      <!--FIN RESUMEN-->
     </main>
     <!-- FIN DE LA SECCION PRINCIPAL DE LA WEB  -->
 
@@ -157,6 +179,7 @@
           </ul>
           <picture>
             <img
+              class="footer__img"
               src="./img/branding/isotype.svg"
               alt="Isotipo de la marca Funkoshop"
             />
