@@ -37,78 +37,80 @@
     <main class="main-container">
       <form action="" class="edit__form">
         <h1 class="edit__h1">EDITAR ITEM</h1>
-        
-        <div class="edit__gridCat">
-          <label class="edit__label" for="category">Categoría: </label>
-          <select class="edit__select" name="category" id="category">
-            <option value="figuras">Figuras</option>
-          </select>
-        </div>
-  
-        <div class="edit__gridLic">
-          <label class="edit__label" for="license">Licencia: </label>
-          <select class="edit__select" name="license" id="license">
-            <option value="naruto shippuden">Naruto Shippuden</option>
-          </select>
-        </div>
-  
-        <div class="edit__gridNom">
-          <label class="edit__label" for="name">Nombre del producto:</label>
-          <input
-            type="text"
-            id="name"
-            value="Kakashi Hatake Shippuden Saga"
-            class="edit__input edit__inputNom"
-          />
-        </div>
-  
-        <div class="edit__gridDes">
-          <label class="edit__label" for="description"></label>
-          <textarea class="edit__textarea" name="description" id="description" rows="4rem" cols="80rem" placeholder="Descripción del producto"></textarea>
-        </div>
-  
-        <div class="edit__gridProd">
-          <label class="edit__label" for="sku">SKU:</label>
-          <input class="edit__input edit__input1" type="text" id="sku" value="NAR001012" />
-      
-          <label class="edit__label" for="price">Precio:</label>
-          <input class="edit__input edit__input2" type="text" id="price" value="$ 1.799,00" />
-        
-          <label class="edit__label" for="stock">Stock:</label>
-          <input class="edit__input edit__input3" type="number" id="stock" value="10" min="0" />
-        </div>
-  
-        <div class="edit__gridPago">
-          <label class="edit__label" for="descuento">Descuento:</label>
-          <input class="edit__input edit__input4" type="text" id="descuento" value="10%" />
 
-          <label class="edit__label" for="cuotas">Cuotas: </label>
-          <select class="edit__select" name="cuotas" id="cuotas">
-            <option value="6">6 Coutas sin interés</option>
-          </select>
-        </div>
-
-        <div class="edit__gridFile">
-          <label class="edit__label" for="file">Imágenes: </label>
-          <input type="file" value="Elegir archivos"/>
-        </div>
+        <div class="global__edit-item">
+          <div class="edit__gridCat">
+            <label class="edit__label" for="category">Categoría: </label>
+            <select class="edit__select" name="category" id="category">
+              <option value="figuras">Figuras</option>
+            </select>
+          </div>
+    
+          <div class="edit__gridLic">
+            <label class="edit__label" for="license">Licencia: </label>
+            <select class="edit__select" name="license" id="license">
+              <option value="naruto shippuden">Naruto Shippuden</option>
+            </select>
+          </div>
+    
+          <div class="edit__gridNom">
+            <label class="edit__label" for="name">Nombre del producto:</label>
+            <input
+              type="text"
+              id="name"
+              value="Kakashi Hatake Shippuden Saga"
+              class="edit__input edit__inputNom"
+            />
+          </div>
+    
+          <div class="edit__gridDes">
+            <label class="edit__label" for="description"></label>
+            <textarea class="edit__textarea" name="description" id="description" rows="4rem" cols="80rem" placeholder="Descripción del producto"></textarea>
+          </div>
+    
+          <div class="edit__gridProd">
+            <label class="edit__label" for="sku">SKU:</label>
+            <input class="edit__input edit__input1" type="text" id="sku" value="NAR001012" />
         
-        <div class="edit__gridImg">
-          <section>
-            <img class="edit__img" src="img/naruto/kakashi_hatake_front.svg" alt="figura-frente" />
-            <hr class="edit__hr"/>
-            <span class="edit__span">Frente</span>
-          </section>
-
-          <section>
-            <img class="edit__img" src="img/naruto/kakashi_hatake_back.svg" alt="figura-dorso" />
-            <hr class="edit__hr"/>
-            <span class="edit__span">Dorso</span>
-          </section>
-        </div>
+            <label class="edit__label" for="price">Precio:</label>
+            <input class="edit__input edit__input2" type="text" id="price" value="$ 1.799,00" />
+          
+            <label class="edit__label" for="stock">Stock:</label>
+            <input class="edit__input edit__input3" type="number" id="stock" value="10" min="0" />
+          </div>
+    
+          <div class="edit__gridPago">
+            <label class="edit__label" for="descuento">Descuento:</label>
+            <input class="edit__input edit__input4" type="text" id="descuento" value="10%" />
   
-        <div class="edit__gridEdit">
-          <button class="edit__boton" type="submit">Modificar Producto</button>
+            <label class="edit__label" for="cuotas">Cuotas: </label>
+            <select class="edit__select" name="cuotas" id="cuotas">
+              <option value="6">6 Coutas sin interés</option>
+            </select>
+          </div>
+  
+          <div class="edit__gridFile">
+            <label class="edit__label" for="file">Imágenes: </label>
+            <input type="file" value="Elegir archivos"/>
+          </div>
+          
+          <div class="edit__gridImg">
+            <section>
+              <img class="edit__img" src="img/naruto/kakashi_hatake_front.svg" alt="figura-frente" />
+              <hr class="edit__hr"/>
+              <span class="edit__span">Frente</span>
+            </section>
+  
+            <section>
+              <img class="edit__img" src="img/naruto/kakashi_hatake_back.svg" alt="figura-dorso" />
+              <hr class="edit__hr"/>
+              <span class="edit__span">Dorso</span>
+            </section>
+          </div>
+    
+          <div class="edit__gridEdit">
+            <button class="edit__boton" type="submit">Modificar Producto</button>
+          </div>
         </div>
       </form>
     </main>
