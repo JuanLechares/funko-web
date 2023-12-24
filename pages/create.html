@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CREATE ITEM | Funkoshop</title>
+    <link rel="stylesheet" href="../css/index.css">
+  </head>
+  <body>
+    <!-- INICIO HEADER -->
+    <header>
+      <nav class="navbar container">
+        <picture class="navbar__logo">
+          <a href="../index.html">
+            <img
+              src="../img/branding/logo_light_horizontal.svg"
+              alt="Isologotipo de la marca Funkoshop"
+            />
+          </a>
+        </picture>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a class="navbar__link" href="./index.html">VER TIENDA</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="./admin.html">ADMIN</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="./login.html">SALIR</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- FIN HEADER -->
+
+    <!-- SECCION PRINCIPAL DE LA WEB -->
+    <main class="main-container">
+      <form action="" class="edit__form">
+        <h1 class="edit__h1">CREAR NUEVO ITEM</h1>
+        
+        <div class="edit__gridCat">
+          <label class="edit__label" for="category">Categoría: </label>
+          <select class="edit__select" name="category" id="category">
+            <option selected value="Seleccionar">--Seleccionar--</option>
+            <option value="figuras">Figuras</option>
+          </select>
+        </div>
+  
+        <div class="edit__gridLic">
+          <label class="edit__label" for="license">Licencia: </label>
+          <select class="edit__select" name="license" id="license">
+            <option selected value="Seleccionar">--Seleccionar--</option>
+            <option value="naruto shippuden">Naruto Shippuden</option>
+          </select>
+        </div>
+  
+        <div class="edit__gridNom">
+          <label class="edit__label" for="name">Nombre del producto:</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Nombre"
+            class="edit__input edit__inputNom"
+          />
+        </div>
+  
+        <div class="edit__gridDes">
+          <label class="edit__label" for="description"></label>
+          <textarea class="edit__textarea" name="description" id="description" rows="4rem" cols="80rem" placeholder="Descripción del producto"></textarea>
+        </div>
+  
+        <div class="edit__gridProd">
+          <label class="edit__label" for="sku">SKU:</label>
+          <input class="edit__input edit__input1" type="text" id="sku" placeholder="00000000000" />
+      
+          <label class="edit__label" for="price">Precio:</label>
+          <input class="edit__input edit__input2" type="text" id="price" placeholder="$ 0,00" />
+        
+          <label class="edit__label" for="stock">Stock:</label>
+          <input class="edit__input edit__input3" type="number" id="stock" placeholder="0" min="0" />
+        </div>
+  
+        <div class="edit__gridPago">
+          <label class="edit__label" for="descuento">Descuento:</label>
+          <input class="edit__input edit__input4" type="text" id="descuento" placeholder="0%" />
+
+          <label class="edit__label" for="cuotas">Cuotas: </label>
+          <select class="edit__select" name="cuotas" id="cuotas">
+            <option selected value="Seleccionar">--Seleccionar--</option>
+            <option value="6">6 Coutas sin interés</option>
+          </select>
+        </div>
+
+        <div class="edit__gridFile">
+          <label class="edit__label" for="file">Imágenes: </label>
+          <input type="file" value="Elegir archivos"/>
+        </div>
+  
+        <div class="edit__gridEdit create__edit">
+          <button class="edit__boton create__boton" type="submit"><a href="./admin.html">Agregar Producto</a></button>
+          <button class="edit__boton create__boton" type="reset">Limpiar</button>
+        </div>
+      </form>
+    </main>
+    <!-- FIN DE LA SECCION PRINCIPAL DE LA WEB  -->
+
+    <!--INICIO FOOTER -->
+    <footer class="footer">
+      <nav class="navbar container">
+           <ul class="navbar__item">
+            <li class="navbar__item"><a class="navbar__link" href="./shop.html">SHOP</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="./register.html">REGISTRARSE</a></li>
+            <li class="navbar__item" ><a class="navbar__link" href="./login.html">LOGIN</a></li>
+            <li class="navbar__item"><a class="navbar__link"  href="./contacto.html">CONTACTO</a></li>       
+           </ul>
+           <picture>
+             <img
+               src="../img/branding/isotype.svg"
+               alt="Isotipo de la marca Funkoshop"
+             />
+           </picture>
+         </nav>
+       
+       <p class="footer__copy">All rights reserved 2023 - Funkoshop & copyright</p>
+     </footer>
+    <!--FIN FOOTER -->
+  </body>
+</html>
